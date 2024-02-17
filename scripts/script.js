@@ -101,5 +101,10 @@ function setInputById(element) {
 
 function setInnertextById(elementId, area) {
   const setElement = document.getElementById(elementId);
-  setElement.value = area;
+
+  if (isNaN(area)) {
+    setElement.value = "Input Number";
+  } else {
+    setElement.value = area;
+  }
 }
