@@ -108,3 +108,8 @@ function setInnertextById(elementId, area) {
     setElement.value = area;
   }
 }
+
+function outputClear() {
+  const inputFieldText = document.getElementById("result");
+  inputFieldText.value = "";
+}
